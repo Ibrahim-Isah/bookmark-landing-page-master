@@ -2,6 +2,7 @@ const simple = document.querySelector('.simple');
 const speedy = document.querySelector('.speedy');
 const easy = document.querySelector('.easy');
 const details = document.querySelector('.slide-details');
+const acc = document.getElementsByClassName('accordion');
 
 function onSimple() {
   simple.setAttribute('id', 'active');
@@ -67,3 +68,17 @@ speedy.addEventListener('click', onSpeedy);
 easy.addEventListener('click', onEasy);
 
 onSimple();
+
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function () {
+    this.classList.toggle('active');
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+}
