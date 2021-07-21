@@ -25,21 +25,21 @@ nav{
     margin-bottom: 30px;
 }
 
-nav ul{
+ul{
     text-decoration: none;
     display: flex;
 }
 
-nav ul li{
+ul li{
     list-style: none;
     margin-right: 1.3rem;
     cursor: pointer;
 }
-nav ul li a{
+ul li a{
     color: black;
     text-decoration: none;
 }
-nav ul li a:hover{
+ul li a:hover{
     color: orangered;
 }
 
@@ -366,4 +366,88 @@ nav ul li:nth-last-child():hover{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+/* Join us */
+
+.join{
+    background-color: hsl(231, 69%, 60%);
+    
+}
+
+.join-container{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    margin: auto auto;
+    margin: 20px auto;
+}
+
+.join > p{
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+#join-big{
+    font-weight: 700;
+    font-size: 1.65rem;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.join form input{
+    outline-color: orangered;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    padding: 0.5rem 0.6rem;
+
+}
+
+.join form button{
+    background:orangered;
+    padding: 10px 20px 10px 20px;
+    margin-top: -5px;
+    border-radius: 5px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.join form button:hover{
+    border: 1px solid orangered;
+    color: orangered;
+    background-color: white;
+}
+
+
+/* footer section */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color:hsl(229, 31%, 21%) ;
+    color: #fff;
+}
+
+.footer .social-icons img:hover{
+    background-color: orangered;
+}
+
+.footer ul li a{
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.footer ul li a:hover{
+    color: orangered;
+}
+
+.footer ul .logo-svg{ 
+    color: white;
 }
