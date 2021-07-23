@@ -159,7 +159,7 @@ nav ul li:nth-last-child():hover{
         margin-left: 6rem;
         overflow: hidden;
         width: 400px;
-        height: 40%;
+        height: 25%;
         z-index: 0;
     }
 }
@@ -289,7 +289,7 @@ nav ul li:nth-last-child():hover{
         margin-top: 3.5rem;
         overflow: hidden;
         width: 400px;
-        height: 35%;
+        height: 25%;
         z-index: 0;
 }
 
