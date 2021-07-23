@@ -8,11 +8,13 @@
     max-width: 1440px;
     font-family: "Rubik" , sans-serif;
     font-size: 18px;
+    overflow-x: hidden;
 }
+
 
 .rec{
     position: absolute;
-    width: 50%;
+    width: 400px;
     height: 40%;
     background-color: hsl(231, 69%, 60%);
     border-radius: 100px;
@@ -67,6 +69,12 @@ nav ul li:nth-last-child():hover{
     background-color: white;
 }
 
+@media only screen and (max-width:724px){
+    .nav{
+        display: none;
+    }
+}
+
 
 /* hero section */
 .getit{
@@ -81,6 +89,7 @@ nav ul li:nth-last-child():hover{
     flex-direction: column;
     justify-content: space-evenly;
     width: 40%;
+    flex: 2;
 }
 
 .manager h1{
@@ -113,18 +122,46 @@ nav ul li:nth-last-child():hover{
 }
 
 .manager-pic .rec{
-    top: 57%;
-    left: 65%;
+    width: 40rem;
+    height: 20rem;
+    margin-top: 7rem;
+    margin-left: 10rem;
     z-index: 0;
-}
-
-
-
+} 
 
 .manager-pic img{
     position: relative;
     width: 100%;
-    height: 100%;
+    height:auto;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:724px){
+    .getit{
+        flex-direction: column-reverse;
+    }
+    .manager{
+        margin:auto 5rem;
+        width: 90vw;
+        text-align: center;
+    }
+    .manager h1{
+        font-size: 2rem;
+        margin-top: 50px;
+
+    }
+
+    .manager p{
+        font-size: 18px;
+    }
+    .manager-pic .rec{
+        margin-top: 3.5rem;
+        margin-left: 6rem;
+        overflow: hidden;
+        width: 400px;
+        height: 40%;
+        z-index: 0;
+    }
 }
 
 
@@ -184,6 +221,8 @@ nav ul li:nth-last-child():hover{
 }
 .detail-pic img{
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .detail-para{
@@ -222,6 +261,39 @@ nav ul li:nth-last-child():hover{
     color: gray;
     margin: 20px auto;
 }
+@media only screen and (max-width:724px){
+    .features .features-head{
+        width: 100%;
+    }
+    .features button{
+        display: block;
+        margin: 0;
+        text-align: center;
+        width: 15rem;
+}
+    .slide-details{
+        flex-direction: column;
+}
+    .detail-para{
+        margin-bottom: 50px;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+}
+    .detail-para h1{
+        font-size: 1.65rem;
+        margin-top: 50px;
+        
+    }
+    .detail-pic .rec{
+        margin-top: 3.5rem;
+        overflow: hidden;
+        width: 400px;
+        height: 35%;
+        z-index: 0;
+}
+
+}
 
 
 /* questions section */
@@ -259,7 +331,7 @@ nav ul li:nth-last-child():hover{
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    height: 60vh;
+    height: 20rem;
     margin-right: 100px;
 }
 
@@ -288,6 +360,29 @@ nav ul li:nth-last-child():hover{
     border: 1px solid hsl(231, 69%, 60%);
 }
 
+@media only screen and (max-width:724px){
+    .download-para{
+        width: 100%;
+
+    }
+    .download-para h1{
+        font-size: 1.65rem;
+    }
+    .download-cards{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+}
+    .card{
+        box-shadow:0px 0px 4px rgba(53, 37, 37, 0.4);
+        max-width: 15rem;
+        overflow-x: hidden;
+        height: auto;
+        padding: 20px;
+        margin-right: 0;
+}
+
+}
 /* Questions section */
 .questions{
     margin: 50px auto 20px auto;
@@ -368,6 +463,16 @@ nav ul li:nth-last-child():hover{
     transition: max-height 0.2s ease-out;
 }
 
+@media only screen and (max-width:724px){
+    .questions{
+        margin: 50px auto 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+}
+}
+
 /* Join us */
 
 .join{
@@ -382,7 +487,6 @@ nav ul li:nth-last-child():hover{
     justify-content: space-evenly;
     align-items: center;
     width: 30%;
-    margin: auto auto;
     margin: 20px auto;
 }
 
@@ -423,6 +527,18 @@ nav ul li:nth-last-child():hover{
     background-color: white;
 }
 
+@media only screen and (max-width:724px){
+    .join-container{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 20px auto;
+}
+
+}
 
 /* footer section */
 .footer{
@@ -450,4 +566,21 @@ nav ul li:nth-last-child():hover{
 
 .footer ul .logo-svg{ 
     color: white;
+}
+
+@media only screen and (max-width:724px){
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .footer ul li{
+        margin-top: 20px;
+    }
 }
