@@ -146,7 +146,9 @@ nav ul li:nth-last-child():hover{
         text-align: center;
     }
     .manager h1{
-    font-size: 2rem;
+        font-size: 2rem;
+        margin-top: 50px;
+
     }
 
     .manager p{
@@ -280,8 +282,16 @@ nav ul li:nth-last-child():hover{
 }
     .detail-para h1{
         font-size: 1.65rem;
+        margin-top: 50px;
         
     }
+    .detail-pic .rec{
+        margin-top: 3.5rem;
+        overflow: hidden;
+        width: 400px;
+        height: 35%;
+        z-index: 0;
+}
 
 }
 
