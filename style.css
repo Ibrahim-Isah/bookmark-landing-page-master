@@ -67,6 +67,16 @@ nav ul li:nth-last-child():hover{
     background-color: white;
 }
 
+@media  only screen and (max-width:724px) {
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+}
+
 
 /* hero section */
 .getit{
