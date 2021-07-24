@@ -71,16 +71,16 @@ nav ul li:nth-last-child():hover{
 
 @media only screen and (max-width:724px){
     .nav{
-        display: none;
+        display: flex;
     }
 
-    .nan-mobile{
+    nav{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100vw;
+    }
+
+    nav ul li{
+        margin: 0;
     }
 }
 
@@ -224,8 +224,10 @@ nav ul li:nth-last-child():hover{
 }
 
 .detail-pic .rec{
-    top:185%;
-    right: 65%;
+    width: 40rem;
+    height: 20rem;
+    margin-top: 6rem;
+    margin-left: -15rem;
     z-index: 0;
 }
 .detail-pic img{
@@ -270,7 +272,14 @@ nav ul li:nth-last-child():hover{
     color: gray;
     margin: 20px auto;
 }
+
+#addmargin{
+    margin-left:70px;
+}
 @media only screen and (max-width:724px){
+    #addmargin{
+    margin-left:0px;
+    }
     .features .features-head{
         width: 100%;
     }
@@ -546,6 +555,21 @@ nav ul li:nth-last-child():hover{
         width: 100%;
         margin: 20px auto;
 }
+    .join form{
+        display: flex;
+        flex-direction: column;     
+        align-items: center;
+        justify-content: center;   
+    }
+
+    .join form button,.join form input{
+        margin: 5px auto;
+        width: 60vw;
+
+    }
+
+
+
 
 }
 

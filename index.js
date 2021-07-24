@@ -33,7 +33,7 @@ function onSpeedy() {
   details.innerHTML = `
       <div class="detail-pic">
         <div class="rec"></div>
-        <img src="./images/illustration-features-tab-2.svg" alt="" style="margin-left:70px;">
+        <img src="./images/illustration-features-tab-2.svg" alt="" id = "addmargin">
       </div>
       <div class="detail-para">
         <h1>Intelligent search</h1>
@@ -51,7 +51,7 @@ function onEasy() {
   details.innerHTML = `
       <div class="detail-pic">
         <div class="rec"></div>
-        <img src="./images/illustration-features-tab-3.svg" alt="" style="margin-left:70px;">
+        <img src="./images/illustration-features-tab-3.svg" alt=""  id="addmargin">
       </div>
       <div class="detail-para">
         <h1>Share your bookmarks</h1>
