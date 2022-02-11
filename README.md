@@ -1,6 +1,6 @@
 # Frontend Mentor - Bookmark landing page
 # Link to Hosted Version - https://ibrahim-isah.github.io/bookmark-landing-page-master/
-Streak
+Streak movement o
 ![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
